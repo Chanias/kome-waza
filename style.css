@@ -1,0 +1,109 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: #fdfdfd;
+  color: #003e52;
+}
+.logo {
+  width: 170px;
+}
+nav {
+  top: 0px; /*pour que la navbar se colle en haut */
+  height: 100px; /*pour que la navbar descende un peu*/
+  width: 100%; /*pour que la navbar prenne toute la largeur*/
+  display: flex; /*pour que tout s'aligne*/
+  align-items: center; /*pour que tout s'aligne, au centre) */
+  justify-content: space-evenly; /*pour avoir un épassement pour que les éléments ne soit pas collés) */
+  margin: 10px;
+  font-size: px;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  margin-right: 40px;
+}
+.nav-links li {
+  margin: 10px; /*écart entre les catégories*/
+  overflow: hidden; /*cacher le 2e élément qui sert au Responsive*/
+}
+.nav-links a {
+  text-decoration: none; /*enlever le surlignage et tout de l'hyperlien*/
+  /*position: relative; permet de pas voir les catégories quand l'écran se rétrécit*/
+  display: block;
+}
+.nav-links .categorie {
+  color: #003e52;
+  padding: 12px;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.3s;
+  font-size: 25px; /*taille de l'écriture (catégories)*/
+  font-weight: 300;
+}
+.nav-links .categorie:hover {
+  border-bottom: 3px solid black;
+  color: #6cadc2;
+}
+.nav-icones {
+  position: absolute;
+  right: 0;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.a_propos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: right;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+.a_propos img{
+    height: 600px;
+}
+img {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: auto;
+}
+h2 {
+  text-align: center;
+}
+table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+table i {
+  align-content: flex-start;
+  padding-left: 3em;
+}
+
+hr {
+  height: 3px;
+  width: 700px;
+  background-color: gray;
+  border: none;
+}
+iframe {
+  filter: grayscale(100%);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+footer {
+  background-color: #003e52;
+  color: white;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
